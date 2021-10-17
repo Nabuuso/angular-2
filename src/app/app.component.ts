@@ -1,6 +1,5 @@
-import { Component } from '@angular/core';
-import { constructor } from 'console';
-
+import { Component, OnInit } from '@angular/core';
+import { UsersService } from './service/users/users.service';
 
 @Component({
   selector: 'app-root',
@@ -9,14 +8,37 @@ import { constructor } from 'console';
   
 })
 
-export class AppComponent {
-  title = 'Github-API';
+export class AppComponent implements OnInit {
+  title = 'GithubApi';
+  constructor(private usersService:UsersService){
+    ngOnInit(); void { 
+      
+      this.getPublicRepositories()
+    }
+    getPublicRepositories(){
+      this.usersService.getUsers()._subscribe;((_response: any[])=>
+    })
+  }
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
+  }
+  // ngOnInit(); void {
+  //   throw new Error('Method not implemented.');
+  // }
 }
 
-constructor(); { }  ngOnInit(); void {
-}
+
 
 function ngOnInit() {
+  throw new Error('Function not implemented.');
+}
+
+function getPublicRepositories() {
+  throw new Error('Function not implemented.');
+}
+
+function subscribe(_arg0: (response: any) => any): any {
   throw new Error('Function not implemented.');
 }
 
