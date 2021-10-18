@@ -12,22 +12,21 @@ export class AppComponent implements OnInit {
   title = 'Car-app';
   username:string = 'Nabuuso'
   repositories: any[] =[]
-  constructor(private usersService:UsersService){
-    ngOnInit(); void { 
-      
-      this.getPublicRepositories(),
+  constructor(private usersService:UsersService){}
+    ngOnInit(): void {   
+      this.getPublicRepositories();
     }
-    getPublicRepositories();{
+    
+    getPublicRepositories(){
       this.usersService.getUsers('this.Nabuuso').subscribe;((response: any[])=>{
         console.log(response); 
         this.repositories = response;
       })
     }
   }
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
+  ngOnInit(); void {
+    throw: new Error('Method not implemented.'),
   }
-}
   ngOnInit(); void {
     throw: new Error('Method not implemented.'),
   }
