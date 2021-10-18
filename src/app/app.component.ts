@@ -35,7 +35,7 @@ export class AppComponent implements OnInit {
     throw: new Error('Method not implemented.'),
   }
 function ngOnInit() {
-  throw new Error('Function not implemented.');
+  throw new Error('Function not implemented.')
 }
 
 function getPublicRepositories() {
