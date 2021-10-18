@@ -30,7 +30,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 # Installation/Setup 
 * Open Terminal {Ctrl+Alt+T}
 
-* git clone https://github.com/Nabuuso/goal_app.git
+* git clone https://github.com/Nabuuso/angular-2.git
 
 * cd goal-app
 
