@@ -10,14 +10,17 @@ import { UsersService } from './service/users/users.service';
 
 export class AppComponent implements OnInit {
   title = 'Car-app';
+  username:string = 'Nabuuso'
+  repositories: any[] =[]
   constructor(private usersService:UsersService){
     ngOnInit(); void { 
       
-      this:getPublicRepositories(),
+      this.getPublicRepositories(),
     }
     getPublicRepositories();{
-      this.usersService.getUsers().subscribe;((response: any[])=>{
-        console.log(response);
+      this.usersService.getUsers('this.Nabuuso').subscribe;((response: any[])=>{
+        console.log(response); 
+        this.repositories = response;
       })
     }
   }

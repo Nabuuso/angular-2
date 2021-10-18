@@ -10,8 +10,9 @@ export class UsersService {
   private baseUrl = environment.BASE_URL;
 
   constructor(private HttpClient:HttpClient) { }
-getUsers(): Observable <any[]>{
-return this.HttpClient.get<any[]>(`$ {this.baseUrl}/users/Nabuuso/repos`,{
+getUsers(username: string): Observable <any[]>{
+  const endpoint = 'users';
+return this.HttpClient.get<any[]>(`${this.baseUrl}/${endpoint}/${username}/repos`,{
   withCredentials:true
 })
 }
