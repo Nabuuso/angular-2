@@ -10,11 +10,15 @@ import { UsersService } from './service/users/users.service';
 
 export class AppComponent implements OnInit {
   title = 'Car-app';
+
   username:string = 'Nabuuso'
+  
   repositories: any[] =[]
+  getPublicRepositories: any;
   constructor(private usersService:UsersService){}
     ngOnInit(): void {   
-      // this.getPublicRepositories();
+      
+      this.getPublicRepositories();
     }
     
     // getPublicRepositories(){
@@ -22,14 +26,13 @@ export class AppComponent implements OnInit {
     //     console.log(response); 
     //     this.repositories = response;
     //   })
-    // }
+
 
     this.usersService.getUsers(this.username).then((response: any)=>{
-        console.log(response);
-    })
-  }
-
-  }
+      console.log(response);
+      this.repositories = response;
+  });
+  
 
 //   ngOnInit(); void {
 //     throw: new Error('Method not implemented.'),
