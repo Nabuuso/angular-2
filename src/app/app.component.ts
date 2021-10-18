@@ -13,7 +13,7 @@ export class AppComponent implements OnInit {
   constructor(private usersService:UsersService){
     ngOnInit(); void { 
       
-      this.getPublicRepositories(),
+      this:getPublicRepositories(),
     }
     getPublicRepositories();{
       this.usersService.getUsers().subscribe;((response: any[])=>{
