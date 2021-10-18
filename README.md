@@ -1,6 +1,8 @@
-# CarApp
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.9.
+# GITHUB_API
+# Author
+Sr Betty Nabuuso
+# Description 
+A website where users can enter a GitHub username into a form, submit the form, and see names and descriptions of their public repositories. 
 
 ## Development server
 
@@ -25,3 +27,24 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Installation/Setup 
+* Open Terminal {Ctrl+Alt+T}
+
+* git clone https://github.com/Nabuuso/goal_app.git
+
+* cd goal-app
+
+* code .
+# Technologies Used 
+* HTML,
+* CSS
+* Bootstrap
+* Javascript
+* Typescript
+# Known Bugs 
+No bugs
+# Contact Information 
+wagabaliz@gmail.com
+# License 
+* MIT
+* Copyright (c) 2021 Sr Betty Nabuuso(fsp)
