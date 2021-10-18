@@ -9,27 +9,29 @@ import { UsersService } from './service/users/users.service';
 })
 
 export class AppComponent implements OnInit {
-  title = 'GithubApi';
+  title = 'Car-app';
   constructor(private usersService:UsersService){
     ngOnInit(); void { 
       
-      this.getPublicRepositories()
+      this:getPublicRepositories(),
     }
-    getPublicRepositories(){
-      this.usersService.getUsers()._subscribe;((_response: any[])=>
-    })
+    getPublicRepositories();{
+      this.usersService.getUsers().subscribe;((response: any[])=>{
+        console.log(response);
+      })
+    }
   }
   ngOnInit(): void {
     throw new Error('Method not implemented.');
   }
-  }
-  // ngOnInit(); void {
-  //   throw new Error('Method not implemented.');
-  // }
 }
+  ngOnInit(); void {
+    throw: new Error('Method not implemented.'),
+  }
 
-
-
+  ngOnInit(); void {
+    throw: new Error('Method not implemented.'),
+  }
 function ngOnInit() {
   throw new Error('Function not implemented.');
 }
