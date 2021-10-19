@@ -22,19 +22,6 @@ export class AppComponent implements OnInit {
      this.repositories = response
     }
   }
-//   ngOnInit(); void {
-//     throw: new Error('Method not implemented.'),
-//   }
-//   ngOnInit(); void {
-//     throw: new Error('Method not implemented.'),
-//   }
-
-//   ngOnInit(); void {
-//     throw: new Error('Method not implemented.'),
-//   }
-//   function ngOnInit(): void {
-//   throw new Error('Function not implemented.')
-// }
 
 
 

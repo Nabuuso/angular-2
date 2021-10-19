@@ -1,5 +1,16 @@
+<!-- <router-outlet></router-outlet> -->
+<div class="container border p-5 m-5 b-25">
+<div class="row">
+    <div class="col-6 border p-5"> 
+        <app-user></app-user>  
+</div>
+<div class="col-6 border p-5">
+    <app-repositories></app-repositories>
+</div>
+</div>
 <div class="container border p-5 m-5 h-75">
     <ul *ngFor= 'let repo of repositories'>
         <li>{{repo.name}}</li>
     </ul>
+</div>
 </div>
