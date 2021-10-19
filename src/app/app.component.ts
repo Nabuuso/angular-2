@@ -9,7 +9,7 @@ import { UsersService } from './service/users/users.service';
 })
 
 export class AppComponent implements OnInit {
-  title = 'Car-app';
+  title = 'Api-request';
   username:string = 'Nabuuso'
   repositories: any[] =[]
   constructor(private usersService:UsersService){}
@@ -35,11 +35,5 @@ function ngOnInit() {
   throw new Error('Function not implemented.')
 }
 
-function getPublicRepositories() {
-  throw new Error('Function not implemented.');
-}
 
-function subscribe(_arg0: (response: any) => any): any {
-  throw new Error('Function not implemented.');
-}
 
