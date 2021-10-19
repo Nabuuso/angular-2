@@ -18,10 +18,7 @@ export class AppComponent implements OnInit {
     }
     
     getPublicRepositories(){
-      this.usersService.getUsers(this.username).then<any[]>(response) =>{
-        console.log(response); 
-        this.repositories = response;
-      }
+      this.usersService.getUsers(this.username);
     }
   }
   ngOnInit(); void {
