@@ -21,19 +21,19 @@ export class AppComponent implements OnInit {
       this.usersService.getUsers(this.username);
     }
   }
-  ngOnInit(); void {
-    throw: new Error('Method not implemented.'),
-  }
-  ngOnInit(); void {
-    throw: new Error('Method not implemented.'),
-  }
+//   ngOnInit(); void {
+//     throw: new Error('Method not implemented.'),
+//   }
+//   ngOnInit(); void {
+//     throw: new Error('Method not implemented.'),
+//   }
 
-  ngOnInit(); void {
-    throw: new Error('Method not implemented.'),
-  }
-function ngOnInit() {
-  throw new Error('Function not implemented.')
-}
+//   ngOnInit(); void {
+//     throw: new Error('Method not implemented.'),
+//   }
+//   function ngOnInit(): void {
+//   throw new Error('Function not implemented.')
+// }
 
 
 
