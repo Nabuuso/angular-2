@@ -17,8 +17,9 @@ export class AppComponent implements OnInit {
       this.getPublicRepositories();
     }
     
-    getPublicRepositories(){
-      this.usersService.getUsers(this.username);
+    async getPublicRepositories(){
+     const response = await this.usersService.getUsers(this.username);
+     this.repositories = response
     }
   }
 //   ngOnInit(); void {
