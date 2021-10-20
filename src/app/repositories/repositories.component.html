@@ -10,10 +10,10 @@
     </div>
 </div> -->
 
-<div *ngFor="let repo of repositories" class="card" style="width: 18rem;">
+<div *ngFor="let repo of repositories" class="card" style="width: 18rem; padding-top: 10px;">
     <div class="card-body">
       <h5 class="card-title">{{repo.name}}</h5>
       <p class="card-text">{{repo.description}}</p>
-      <a href="{{repo.url}}" class="btn btn-primary">Go to Github Repo</a>
+      <a href="{{repo.url}}" class="btn btn-warning">Go to Github Repo</a>
     </div>
   </div>
