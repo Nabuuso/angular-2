@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
+import { RepositoryService } from '../services/repository/repository.service';
 
 @Component({
   selector: 'app-repositories',
@@ -7,9 +9,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RepositoriesComponent implements OnInit {
 
-  constructor() { }
+  repositories: any[]=[];
+  isLoading = true;
 
-  ngOnInit(): void {
+ repositoryForm = new FormGroup({
+  repositories: new FormControl(''),
+  username: new FormControl(''),
+  });
+
+  constructor(private reposService: RepositoryService){}
+    ngOnInit(): void {   
+      // this.getPublicRepositories();
+      this.reposService.repositories.subscribe(repositories=>this.repositories=repositories)
+    }
+    
+    async getPublicRepositories(){
+      // try{
+      //   this.isLoading = false
+      // }
+    //  const username = this.repositoryForm.getRawValue().username();
+    //  const repository = this.repositoryForm.getRawValue().username();
+    //  const response = await this.reposService.getRepositories(username, repository);
+    //  this.repositories = response
+    }
   }
 
-}
+

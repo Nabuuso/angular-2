@@ -13,8 +13,9 @@ export class UsersService {
 
 getUsers(username: string){
 
-  const endpoint = 'users';
-return this.HttpClient.get<any[]>(`${this.baseUrl}/${endpoint}/${username}/repos`,{
+  const endpoint = `${this.baseUrl}/users/${username}?client_secret=${environment.Apikey}&client_id=${environment.ClientId}`;
+console.log(endpoint)
+return this.HttpClient.get<any[]>(endpoint,{
 }).toPromise();
 }
 }

@@ -1,11 +1,20 @@
-<div class="container border p-5 m-5 b-25">
+
     <div class="row">
-        <div class="col-6 border p-5"> 
-        <form>
-            <input formControl name="username" class="form-control" type="text" placeholder="Enter you github username">
-            <button class="btn btn-primary" type="button">
+        <div class="col-12"> 
+        <form [formGroup]="searchForm"(submit)="getUserProfile()">
+            <input formControlName="username" class="form-control w-50 d-inline mx-2" type="text" placeholder="Enter your username"/>
+            <button class="btn btn-primary d-inline" type="button" (click)="getUserProfile()"> 
+                Get Repository
+            <span [hidden]="isLoading" class="spinner-border-sm" role="status" aria-hidden="true"></span>
             </button>
         </form>  
         </div>
     </div>
-</div>
+    <div *ngIf="userProfile" class="card" style="width: 18rem;">
+        <img [src]="userProfile.avatar_url" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">{{userProfile.name}}</h5>
+          <p class="card-text">{{userProfile.bio}}</p>
+          <a href="userProfile.html_url" class="btn btn-primary">Go to Github Repo</a>
+        </div>
+      </div>

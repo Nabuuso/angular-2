@@ -1,1 +1,19 @@
-<p>repositories works!</p>
+<!-- <div class="row">
+    <div class="col-12"> 
+    <form [formGroup]="repositoryForm"(submit)="getPublicRepositories()">
+        <input formControlName="username" class="form-control w-50 d-inline mx-2" type="text" placeholder="Enter your username"/>
+        <button class="btn btn-primary d-inline" type="button" (click)="getPublicRepositories()"> 
+            Get Repository
+        <span [hidden]="isLoading" class="spinner-border-sm" role="status" aria-hidden="true"></span>
+        </button>
+    </form>  
+    </div>
+</div> -->
+
+<div *ngFor="let repo of repositories" class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">{{repo.name}}</h5>
+      <p class="card-text">{{repo.description}}</p>
+      <a href="{{repo.url}}" class="btn btn-primary">Go to Github Repo</a>
+    </div>
+  </div>
