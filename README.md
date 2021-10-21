@@ -32,7 +32,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 * git clone https://github.com/Nabuuso/angular-2.git
 
-* cd goal-app
+* cd car-app
 
 * code .
 # Technologies Used 
